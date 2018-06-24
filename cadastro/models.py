@@ -21,6 +21,9 @@ class Bloco(models.Model):
 class Morador(models.Model):
 	pass
 
+	class Meta:
+		verbose_name = 'Morador'
+		verbose_name_plural = 'Moradores'
 
 class Apartamento(models.Model):
 
@@ -29,5 +32,9 @@ class Apartamento(models.Model):
 	bloco = models.ForeignKey(Bloco, on_delete=models.CASCADE)
 
 	moradores = models.ManyToManyField(Morador)
+
+	class Meta:
+		verbose_name = 'Apartamento'
+		verbose_name_plural = 'Apartamentos'
 
 
