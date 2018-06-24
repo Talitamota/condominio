@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Bloco
+from .models import Bloco, Apartamento, Morador
 
 
 class BlocoAdmin(admin.ModelAdmin):	
@@ -8,3 +8,5 @@ class BlocoAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Bloco, BlocoAdmin)
+admin.site.register(Apartamento)
+admin.site.register(Morador)
