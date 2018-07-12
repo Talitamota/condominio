@@ -79,5 +79,6 @@ class Apartamento(models.Model):
 	class Meta:
 		verbose_name = 'Apartamento'
 		verbose_name_plural = 'Apartamentos'
+		ordering = ['numero']
 
 
